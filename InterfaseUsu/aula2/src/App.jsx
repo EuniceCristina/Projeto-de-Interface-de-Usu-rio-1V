@@ -12,7 +12,10 @@ function App() {
     <>
       <Escopo/>
       <EscopoReduz/>
+<<<<<<< HEAD
      
+=======
+>>>>>>> 321e32a96ae4eb8115412e131b324ec3ed95ad48
     </>
   )
 }
