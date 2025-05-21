@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 button{
     background-color: blueviolet;
     margin: 5px;
@@ -6,13 +5,4 @@ button{
 
 .container{
     border: 1px solid violet;
-=======
-button{
-    background-color: blueviolet;
-    margin: 5px;
-}
-
-.container{
-    border: 1px solid violet;
->>>>>>> 77aebd45a7051206aa78fdb96d2349ff13482785
 }
