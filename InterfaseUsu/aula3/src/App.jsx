@@ -13,6 +13,10 @@ function App() {
   return (
     <>
     <Conditional/>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 77aebd45a7051206aa78fdb96d2349ff13482785
     </>
   )
 }
