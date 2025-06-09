@@ -1,4 +1,5 @@
 button{
+<<<<<<< HEAD
     background-color: red;
 }
 
@@ -22,6 +23,14 @@ button:hover{
 }
 p{
     font-weight: bolder;
+=======
+   
+    margin: 10px;
+    padding: 0;
+    border: 10px solid ;
+    border-bottom: 30px solid;
+    border-radius: 0;
+>>>>>>> b2f603577eddd2532202de93d35e4d4da68f9289
 }
 
 #imagem{
@@ -29,9 +38,19 @@ p{
     height: auto;
 }
 
+<<<<<<< HEAD
 .personagens{
     width: 120%;
     display: flex;
     flex-wrap: wrap;
     
 }
+=======
+#modo{
+    width: 150px;
+    height: 40px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+>>>>>>> b2f603577eddd2532202de93d35e4d4da68f9289

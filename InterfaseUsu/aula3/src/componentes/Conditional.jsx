@@ -20,7 +20,7 @@ export default function Conditional(){
     return(
         <>
             {contente}
-            <button style={{backgoundColor : "blue"}} onClick={() => setOpcao(!opcao)}>Mude</button>
+            <button onClick={() => setOpcao(!opcao)}>Mude</button>
         </>
     )
 }
