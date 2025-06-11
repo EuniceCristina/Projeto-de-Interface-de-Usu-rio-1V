@@ -1,0 +1,10 @@
+.head{
+    width: 500px;
+    height: auto;
+    background-color: pink;
+    color: brown;
+}
+
+.main{
+    background-color: lightpink;
+}
