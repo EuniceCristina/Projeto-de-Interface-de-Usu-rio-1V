@@ -1,4 +1,4 @@
-const dados = [
+export const dados = [
   {
     id: 1,
     pergunta: "O que é React?",
