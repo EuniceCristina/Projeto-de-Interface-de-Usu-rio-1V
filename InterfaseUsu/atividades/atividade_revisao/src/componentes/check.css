@@ -1,9 +1,0 @@
-.tarefa{
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
-
-}
-.tarefa button{
-    background-color: lightpink;
-    border: solid white;}
