@@ -47,7 +47,7 @@ export default function Form(){
         
         <button onClick={Reset}>Resert</button> <br />
         
-        Filter<button onClick={() => Ordenar('cres')}>Crescente</button> <button onClick={() => Ordenar(   'desc')}>Decrescente</button>
+        Filtrar<button onClick={() => Ordenar('cres')}>Crescente</button> <button onClick={() => Ordenar(   'desc')}>Decrescente</button>
 
         <h2>Adicione tarefas</h2>
         <form onSubmit={adicionaTarefa}>
