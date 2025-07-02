@@ -19,10 +19,16 @@ export default function Form(){
         setTarefas([])
     }
 
-    function mudaTarefa(nome){
+    function concluirTarefa(nome){
     const tarefas_novas = tarefas.map(tarefa =>
         tarefa.nome == nome ? {...tarefa,status:'Realizada'} : tarefa
     );
+    setTarefas(tarefas_novas);
+}
+    function abrirTarefa(nome){
+        const tarefas_novas = tarefas.map(tarefa =>
+            tarefa.nome == nome ? {...tarefa,status:'Não realizada'} : tarefa
+        );
 
     setTarefas(tarefas_novas)
     
@@ -74,7 +80,7 @@ export default function Form(){
                  <tr>
                 <td>{tarefa.nome}</td>
                 <td>{tarefa.status}</td>
-                <td>{tarefa.status === "Pendente" || tarefa.status === "Não realizada" ? <button onClick={() => mudaTarefa(tarefa.nome)}>Concluir</button> : "✅"}</td>
+                <td>{tarefa.status === "Pendente" || tarefa.status === "Não realizada" ? <button onClick={() => concluirTarefa(tarefa.nome)}>Concluir</button> : <button onClick={() => abrirTarefa(tarefa.nome)}>Abrir</button>}</td>
                
                 </tr>
                 
