@@ -23,8 +23,8 @@ export default function Form(){
     const tarefas_novas = tarefas.map(tarefa =>
         tarefa.nome == nome ? {...tarefa,status:'Realizada'} : tarefa
     );
-    setTarefas(tarefas_novas);
-}
+    
+    setTarefas(tarefas_novas)}
     function abrirTarefa(nome){
         const tarefas_novas = tarefas.map(tarefa =>
             tarefa.nome == nome ? {...tarefa,status:'Não realizada'} : tarefa
