@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+#nome tr, #nome td{
+    border: 2px solid red;
+}
+
+#username tr, #username td{
+    border: 2px solid blue;
+}
+
+#cidade tr, #cidade td{
+    border: 2px solid blueviolet;
+}

@@ -2,16 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import CountClicks from './componentes/countClicks'
-import EffectAPI from './componentes/effectApi'
-import EnviarDados from './componentes/EnviarDados'
+import Lista from './componentes/Lista' 
+import EnvioDados from './componentes/envioDados'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     <EnviarDados/>
+    <Lista/>
+      <EnvioDados/>
     </>
   )
 }
