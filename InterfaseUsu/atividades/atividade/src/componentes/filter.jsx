@@ -1,4 +1,6 @@
 import Form from "./form";
+import dayjs from 'dayjs';
+
 export default function Filter({tarefas, setTarefas}){
     function Reset(){
         setTarefas([])
@@ -16,6 +18,7 @@ export default function Filter({tarefas, setTarefas}){
             setTarefas(tarefas_cres);
         }
     }
+    const hoje = dayjs();
 
     const ordenarPorPrioridade = () => {
         const prioridadeValor = { "Alta": 3, "Media": 2, "Baixa": 1 }
@@ -30,6 +33,7 @@ export default function Filter({tarefas, setTarefas}){
                 a.data.localeCompare(b.data))
             setTarefas(tarefas_cres);
     }
+    
 
     
 

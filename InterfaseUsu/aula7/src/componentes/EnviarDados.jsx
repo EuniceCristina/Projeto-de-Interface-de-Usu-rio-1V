@@ -1,42 +1,43 @@
 import { useEffect } from "react";
 
+export default function EnviarDados() {
+  const API = "http://localhost:8000/tarefas/";
 
-export default function EnviarDados(){
+  useEffect(() => {
+    const enviarDados = async () => {
+      const novoPost = {
+        id: 5,
+        descricao: "Conteúdo do novo post",
+        prioridade: 1,
+        concluida: true,
+      };
 
-    let API = ""
+      try {
+        const response = await fetch(API, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(novoPost),
+        });
 
-    useEffect(() => {
-  const enviarDados = async () => {
-    const novoPost = {
-      id: 1,
-      title: "Conteúdo do novo post"
+        if (!response.ok) {
+          throw new Error(`Erro ${response.status}: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        console.log("Resposta da API:", data);
+      } catch (error) {
+        console.error("Erro ao enviar dados:", error.message);
+      }
     };
 
-    try {
-      const response = await fetch({API}, { //aqui deve ser inserido o endereço da API
-        method: 'POST', // método POST para envio de dados
-        headers: {
-          'Content-Type': 'application/json' // informa que os dados estão em JSON
-        },
-        body: JSON.stringify(novoPost) // converte o objeto JS em JSON
-      });
+    enviarDados();
+  }, []);
 
-      const data = await response.json();
-      console.log("Resposta da API:", data);
-    } catch (error) {
-      console.error("Erro ao enviar dados:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  enviarDados();
-}, []);
-
-    return(
-        <div>
-            <p>envio de dados</p>
-        </div>
-
-    )
+  return (
+    <div>
+      <p>Envio de dados</p>
+    </div>
+  );
 }
